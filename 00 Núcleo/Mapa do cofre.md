@@ -12,6 +12,7 @@ A Sexta-Feira vive no GitHub (repositório privado `JoaoGodoisJunior/sexta-feira
 | GitHub | `03 Legislação/` | Leis e Notas Técnicas em Markdown | Claude |
 | GitHub | `04 Conhecimento/` | Notas por tema, interligadas | Claude |
 | GitHub | `05 Godois/` | Modelos, procedimentos e ferramentas, sem dados de cliente | João e Claude |
+| GitHub | `07 Biblioteca/` | Doutrina por tema: livros, artigos e textos em ABNT | Claude |
 | GitHub | `06 Estudos/` | Desempenho nas sessões de estudo, simulados e pontos a reforçar | Claude |
 
 ## Fluxo

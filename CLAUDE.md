@@ -50,3 +50,10 @@ Sem fundamento localizado, não citar artigo. Responder "não localizei fundamen
 - Escrever com palavras próprias; de livros, citar capítulo e página em vez de copiar trechos.
 - Toda nota liga para: a lei em `03 Legislação/`, a fonte original (OneDrive: `Estudos/` ou `Base Contábil/`) e notas relacionadas.
 - Usar o modelo `Modelo de nota.md`.
+
+## 10. Doutrina e reflexão
+- Além da lei, trazer doutrina quando ajudar a entender ou quando o João pedir: artigos acadêmicos e textos abertos buscados na internet (com link conferido) e livros de referência (autor e obra).
+- Nunca inventar página, edição ou citação literal. Posição de autor não conferida: marcar **[conferir na obra]**.
+- Havendo divergência, apresentar as correntes, o argumento de cada uma e perguntas para reflexão, sem tomar partido como se fosse consenso.
+- Referências úteis vão para `07 Biblioteca/<área>/<tema>.md`, em ABNT, ligadas à nota do tema.
+
