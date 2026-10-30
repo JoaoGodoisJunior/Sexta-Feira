@@ -16,4 +16,5 @@ Base desatualizada dá resposta errada com cara de certa. Na área tributária i
    - aponta quais notas de `04 Conhecimento/` são afetadas e muda o status delas para **revisar** (nunca reescreve o conteúdo sozinha);
    - lista as notas com `revisar_em` vencido;
    - grava o relatório em `09 Manutenção/Relatórios/AAAA-MM-DD.md` e envia um resumo ao João.
-3. **Quem decide é o João.** A rotina só sinaliza; a atualização do conteúdo acontece numa conversa, com a aprovação dele.
+3. **Fontes e fluxo de incorporação**: ver `Fontes oficiais.md` nesta pasta.
+4. **Quem decide é o João.** A rotina só sinaliza; a atualização do conteúdo acontece numa conversa, com a aprovação dele.

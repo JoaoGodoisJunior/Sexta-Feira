@@ -1,0 +1,156 @@
+<title>Painel da Sexta-Feira</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Public+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: cabeçalho com a saúde da base, depois quatro blocos (conhecimento, legislação, estudos, rotina) em grade que vira coluna no celular */
+:root{
+  --bg:#f5f6f8; --surface:#ffffff; --ink:#18212d; --muted:#5b6676; --line:#dfe3ea;
+  --accent:#1f4e79; --accent-soft:#e3ecf5;
+  --ok:#2f7a4f; --ok-soft:#e2f2e8; --warn:#9a6500; --warn-soft:#fbefd6; --bad:#a33b32; --bad-soft:#f8e3e0;
+  --f-display:"Literata", Georgia, "Times New Roman", serif;
+  --f-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11161d; --surface:#18202a; --ink:#e6ebf2; --muted:#9aa6b5; --line:#2a3542;
+  --accent:#7fb0de; --accent-soft:#1d3047;
+  --ok:#7ccc9b; --ok-soft:#173326; --warn:#e5b45a; --warn-soft:#3a2d12; --bad:#f08a80; --bad-soft:#3d1c19; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161d; --surface:#18202a; --ink:#e6ebf2; --muted:#9aa6b5; --line:#2a3542;
+  --accent:#7fb0de; --accent-soft:#1d3047;
+  --ok:#7ccc9b; --ok-soft:#173326; --warn:#e5b45a; --warn-soft:#3a2d12; --bad:#f08a80; --bad-soft:#3d1c19; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;
+  padding-block:24px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:16px}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(26px,4vw,34px);margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0}
+.stamp{font-family:var(--f-mono);font-size:12px;color:var(--muted)}
+.health{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font-family:var(--f-display);font-size:28px;font-weight:600;font-variant-numeric:tabular-nums}
+.kpi span{color:var(--muted);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+h2{font-family:var(--f-display);font-weight:500;font-size:19px;margin:0}
+.eyebrow{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+.bars{display:flex;flex-direction:column;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(0,170px) 1fr 52px;align-items:center;gap:10px;font-size:13px}
+.bar .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar .track{height:8px;background:var(--accent-soft);border-radius:4px;overflow:hidden}
+.bar .fill{height:100%;background:var(--accent);border-radius:4px}
+.bar .val{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;font-weight:500;color:var(--muted);font-size:12px;border-bottom:1px solid var(--line);padding:6px 6px 6px 0}
+td{border-bottom:1px solid var(--line);padding:8px 6px 8px 0;vertical-align:top}
+td.num{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tw{overflow-x:auto}
+.pill{display:inline-block;font-size:11.5px;font-weight:500;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.p-ok{background:var(--ok-soft);color:var(--ok)} .p-warn{background:var(--warn-soft);color:var(--warn)} .p-bad{background:var(--bad-soft);color:var(--bad)} .p-n{background:var(--accent-soft);color:var(--accent)}
+ul.list{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;font-size:13.5px}
+.empty{color:var(--muted);font-size:13.5px;margin:0}
+footer{color:var(--muted);font-size:12px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Godois Tributário &amp; Contábil</p>
+      <h1>Painel da Sexta-Feira</h1>
+      <p class="sub">Saúde da base de conhecimento, legislação, estudos e manutenção.</p>
+    </div>
+    <div class="stamp" id="stamp"></div>
+  </header>
+
+  <div class="health" id="health"></div>
+
+  <div class="grid">
+    <section>
+      <p class="eyebrow">04 Conhecimento</p>
+      <h2>Notas por área e situação</h2>
+      <div class="bars" id="areas"></div>
+      <div class="tw"><table><thead><tr><th>Nota</th><th>Área</th><th>Situação</th><th>Pendências</th></tr></thead><tbody id="notas"></tbody></table></div>
+    </section>
+
+    <section>
+      <p class="eyebrow">03 Legislação</p>
+      <h2>Legislação e jurisprudência</h2>
+      <div class="bars" id="leg"></div>
+      <div class="bars" id="juris"></div>
+      <div><p class="eyebrow">Pendentes de inclusão</p><ul class="list" id="pendleg"></ul></div>
+    </section>
+
+    <section>
+      <p class="eyebrow">06 Estudos</p>
+      <h2>Revisões e desempenho</h2>
+      <div class="tw"><table><thead><tr><th>Assunto</th><th>Matéria</th><th>Próxima revisão</th></tr></thead><tbody id="rev"></tbody></table></div>
+      <div id="sess"></div>
+    </section>
+
+    <section>
+      <p class="eyebrow">08 e 09</p>
+      <h2>Casos e manutenção</h2>
+      <div class="bars" id="extra"></div>
+      <p class="empty" id="manut"></p>
+    </section>
+  </div>
+  <footer>Gerado pelo script <code>05 Godois/painel/gerar_painel.py</code> a partir do repositório da Sexta-Feira. Para atualizar, peça à Sexta-Feira: "atualiza o painel".</footer>
+</div>
+
+<script>
+const D = /*__DADOS__*/null;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const nf = n => Number(n).toLocaleString("pt-BR");
+function bars(el, obj){
+  const max = Math.max(1, ...Object.values(obj));
+  el.innerHTML = Object.entries(obj).map(([k,v]) =>
+    `<div class="bar"><span class="lab" title="${esc(k)}">${esc(k)}</span><span class="track"><span class="fill" style="width:${Math.max(2, v/max*100).toFixed(1)}%"></span></span><span class="val">${nf(v)}</span></div>`).join("");
+}
+function pill(s){
+  const m = {"válida":"p-ok","revisar":"p-warn","desatualizada":"p-bad"};
+  return `<span class="pill ${m[s]||"p-n"}">${esc(s)}</span>`;
+}
+if (D){
+  const [y,mo,d] = D.gerado_em.split("-");
+  $("stamp").textContent = `Atualizado em ${d}/${mo}/${y}`;
+  const nLeg = Object.values(D.legislacao).reduce((a,b)=>a+b,0);
+  const nJur = Object.values(D.juris).reduce((a,b)=>a+b,0);
+  const revisar = D.notas.filter(n => n.status !== "válida").length;
+  const pend = D.notas.reduce((a,n)=>a+n.pendencias,0);
+  const hoje = D.gerado_em;
+  const revHoje = D.revisoes.filter(r => r.proxima === hoje).length;
+  $("health").innerHTML = [
+    [D.notas.length, "notas de conhecimento"],
+    [revisar, "notas a revisar"],
+    [pend, "pendências abertas nas notas"],
+    [nLeg, "normas na base"],
+    [nJur, "precedentes"],
+    [revHoje, "revisões de estudo hoje"],
+  ].map(([v,l]) => `<div class="kpi"><b>${nf(v)}</b><span>${l}</span></div>`).join("");
+  bars($("areas"), D.areas);
+  $("notas").innerHTML = D.notas.length ? D.notas.map(n =>
+    `<tr><td>${esc(n.titulo)}</td><td>${esc(n.area)}</td><td>${pill(n.status)}</td><td class="num">${n.pendencias} abertas · ${n.resolvidas} feitas</td></tr>`).join("")
+    : `<tr><td colspan="4" class="empty">Nenhuma nota ainda.</td></tr>`;
+  bars($("leg"), D.legislacao);
+  bars($("juris"), D.juris);
+  $("pendleg").innerHTML = D.pend_leg.length ? D.pend_leg.map(p => `<li>${esc(p)}</li>`).join("") : `<li>Nenhuma pendência.</li>`;
+  const fmt = s => s ? s.split("-").reverse().join("/") : "concluídas";
+  $("rev").innerHTML = D.revisoes.length ? D.revisoes.map(r =>
+    `<tr><td>${esc(r.assunto)}</td><td>${esc(r.materia)}</td><td class="num">${r.proxima===hoje?'<span class="pill p-warn">hoje</span>':fmt(r.proxima)}</td></tr>`).join("")
+    : `<tr><td colspan="3" class="empty">Nenhuma revisão agendada.</td></tr>`;
+  if (D.sessoes.length){
+    const porMat = {};
+    D.sessoes.forEach(s => { const m = porMat[s.materia] ||= {a:0,e:0}; m.a += s.acertos; m.e += s.erros; });
+    const pct = Object.fromEntries(Object.entries(porMat).map(([k,v]) => [k, Math.round(v.a/Math.max(1,v.a+v.e)*100)]));
+    $("sess").innerHTML = `<p class="eyebrow">Aproveitamento por matéria (%)</p><div class="bars" id="pct"></div>`;
+    bars($("pct"), pct);
+  } else {
+    $("sess").innerHTML = `<p class="empty">Os simulados aparecem aqui depois da primeira sessão de estudo.</p>`;
+  }
+  bars($("extra"), {"Casos Godois": D.casos, "Referências na biblioteca": D.biblio});
+  $("manut").textContent = D.ultimo_relatorio
+    ? `Último relatório de manutenção: ${fmt(D.ultimo_relatorio)}.`
+    : "A rotina semanal de manutenção roda às segundas-feiras; o primeiro relatório aparece aqui depois dela.";
+}
+</script>
