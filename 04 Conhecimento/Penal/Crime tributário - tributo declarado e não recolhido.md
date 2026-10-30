@@ -53,6 +53,8 @@ Empresa do Regime Normal no RS declara ICMS na GIA/EFD de jan. a jun. e não pag
 - Livro: (pendente)
 
 ## Relacionadas
+- [[Omissão de declaração - denúncia espontânea x lançamento de ofício]] — quando o tributo nem foi declarado (Lei 8.137, art. 1º)
+- [[LC 236-2026 - multas, reduções e processo administrativo]]
 - [[Apropriação indébita previdenciária]] (CP, art. 168-A) — a criar
 - [[Parcelamento de tributos]] — a criar
 - [[Código de Defesa do Contribuinte - LC 225]] — a criar
