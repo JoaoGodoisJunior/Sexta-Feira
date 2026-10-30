@@ -1,6 +1,6 @@
 ---
 tipo: conhecimento
-area: Tributário | Penal | Empresarial | Civil | Trabalho | Contabilidade | Controladoria e Finanças
+area: Tributário | Penal | Empresarial | Civil | Trabalho | Contabilidade | Controladoria e Finanças | Administração e Gestão
 fontes: []
 vigencia_conferida_em: AAAA-MM-DD
 certeza: texto expresso | entendimento predominante | controvertido
