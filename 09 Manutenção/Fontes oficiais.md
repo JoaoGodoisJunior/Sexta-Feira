@@ -19,8 +19,8 @@ descricao: Onde a Sexta-Feira procura normas novas e como elas entram na base.
 
 ## Como uma norma nova entra na base
 1. **Detectar (automático)**: a rotina de segunda-feira faz buscas na internet nessas fontes e lista o que saiu ou mudou na semana.
-2. **Sinalizar (automático)**: marca como "revisar" as notas afetadas e grava o relatório em `09 Manutenção/Relatórios/`, com o **link oficial** de cada norma.
-3. **Incorporar (com o João)**: o ambiente do Claude não consegue baixar o texto integral desses sites. O João abre o link do relatório, salva a página (Ctrl+S) ou o PDF e envia no chat. A Sexta-Feira converte, confere se está completo, substitui a versão antiga na `03 Legislação/` (o histórico do GitHub guarda a anterior) e atualiza o índice.
-4. **Revisar as notas (com o João)**: a Sexta-Feira propõe a atualização das notas afetadas, o João aprova, e o status volta a "válida".
+2. **Informar (automático)**: grava o relatório em `09 Manutenção/Relatórios/` com cada novidade, o que muda, as notas que poderiam ser afetadas e o **link oficial**. Não altera nada na base.
+3. **Decidir e incorporar (com o João)**: o João avalia se a novidade interessa. Se sim, abre o link, salva a página (Ctrl+S) ou o PDF e envia no chat (o ambiente do Claude não baixa esses sites). A Sexta-Feira converte, confere se está completo, substitui a versão antiga na `03 Legislação/` (o histórico do GitHub guarda a anterior) e atualiza o índice.
+4. **Revisar as notas (com o João)**: a Sexta-Feira propõe a atualização das notas afetadas, o João aprova, e a nota ganha nova data de revisão.
 
 Enquanto o passo 3 não acontece, a regra 4 do núcleo vale com mais força: a resposta avisa que a norma da base pode estar desatualizada e cita a novidade encontrada.

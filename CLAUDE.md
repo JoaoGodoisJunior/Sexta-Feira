@@ -60,7 +60,7 @@ Sem fundamento localizado, não citar artigo. Responder "não localizei fundamen
 ## 11. Manutenção da base
 - Toda nota de `04 Conhecimento/` tem `status` (válida · revisar · desatualizada) e `revisar_em`.
 - Ao usar uma nota com status "revisar" ou `revisar_em` vencido, avisar o João e conferir antes de responder.
-- A rotina semanal (ver `09 Manutenção/LEIA-ME.md`) só sinaliza; quem atualiza o conteúdo é a conversa, com aprovação do João.
+- A rotina semanal (ver `09 Manutenção/LEIA-ME.md`) só informa as novidades com o link oficial; não altera notas nem legislação. O João decide o que interessa e envia; a atualização acontece na conversa, com a aprovação dele.
 
 ## 12. Registro de correções
 - Ler `00 Núcleo/Correções.md` junto com este arquivo.
