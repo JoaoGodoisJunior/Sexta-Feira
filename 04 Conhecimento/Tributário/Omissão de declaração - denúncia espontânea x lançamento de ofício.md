@@ -3,6 +3,8 @@ tipo: conhecimento
 area: Tributário
 temas: [lançamento por homologação, lançamento de ofício, denúncia espontânea, multa de ofício, decadência, retificação de declaração]
 fontes: [lei-5172-1966-10-25, lei-9430-1996-12-27, lcp-236-2026-09-04, lei-8137-1990-12-27]
+status: válida
+revisar_em: 2027-01-30
 vigencia_conferida_em: 2026-10-30 (CTN compilado da base de 13/10/2026, já com a LC 236/2026; não conferido no Planalto)
 certeza: misto — ver marcação em cada ponto
 origem: pergunta do João em 30/10/2026 (cliente declarou só metade dos tributos)
@@ -24,6 +26,8 @@ Quem declarou e pagou menos do que devia pode se antecipar: retificar e pagar a 
   - art. 142, § 5º (LC 236/2026) — reduções da multa de ofício: 50% (pagamento no prazo da impugnação), 40% (parcelamento no prazo), 30% (pagamento antes da dívida ativa), 20% (parcelamento antes da dívida ativa). Ver [[LC 236-2026 - multas, reduções e processo administrativo]]. **Texto expresso.**
 - [[lei-9430-1996-12-27]], art. 44 — tributos federais: multa de ofício de 75%; qualificada de 100% e de 150% na reincidência (redação da Lei 14.689/2023). **Texto expresso.**
 - [[lei-9430-1996-12-27]], art. 61 — multa de mora federal limitada a 20%. **Entendimento predominante** (dispositivo ainda não conferido na base).
+- **STJ, Tema repetitivo 385** ([[tema-385]]) — há denúncia espontânea quando o contribuinte, depois de declarar parte do débito e pagá-la, **retifica antes de qualquer procedimento** e paga a diferença junto. É exatamente o caso da declaração pela metade. **Precedente vinculante (conferido na base).**
+- **STJ, Súmula 360** ([[sumula-360]]) — não há denúncia espontânea para tributo **declarado e pago com atraso**. Ou seja, o benefício vale para a parte omitida, não para a parte declarada e não paga. **Precedente (conferido na base).**
 
 ## Como funciona na prática
 1. **Confirmar que não há fiscalização iniciada** (intimação, termo de início, malha). Se houver, não cabe denúncia espontânea.
@@ -42,12 +46,13 @@ R$ 10.000 omitidos em tributo federal, juros estimados em 6%:
 | Ofício com fraude (100%) | R$ 20.600 | R$ 15.600 (multa −50%) |
 
 ## Pontos de atenção
-- **Risco penal**: reduzir tributo omitindo informação é crime da [[lei-8137-1990-12-27]], art. 1º, I (reclusão de 2 a 5 anos), mais grave que o do art. 2º, II. O crime só se consuma com o lançamento definitivo (Súmula Vinculante 24 — **a conferir**). Regras de pagamento e parcelamento: ver [[Crime tributário - tributo declarado e não recolhido]]. Encaminhar a advogado.
+- **Risco penal**: reduzir tributo omitindo informação é crime da [[lei-8137-1990-12-27]], art. 1º, I (reclusão de 2 a 5 anos), mais grave que o do art. 2º, II. O crime só se consuma com o lançamento definitivo ([[sumula-vinculante-24]], **conferida na base**). Regras de pagamento e parcelamento: ver [[Crime tributário - tributo declarado e não recolhido]]. Encaminhar a advogado.
 - **ICMS**: multas da lei do RS (Lei 6.537/1973), **não incluída na base**. As reduções da LC 236 dependem de atualização da lei estadual (prazo de 2 anos, CTN art. 211-A). **Controvertido / aguardando regulamentação.**
 - **Devedor contumaz** não tem redução de multa (CTN art. 142, § 6º). **Texto expresso.**
 
 ## Pendências desta nota
-- [ ] Conferir Súmula Vinculante 24 e jurisprudência do STJ sobre denúncia espontânea em declaração parcial.
+- [x] Súmula Vinculante 24, Tema 385 e Súmula 360 do STJ conferidos na base (30/10/2026).
+- [ ] Jurisprudência do CARF e do TARF-RS sobre o tema.
 - [ ] Incluir a Lei 6.537/1973 (RS) e as multas do ICMS.
 - [ ] Conferir art. 61 da Lei 9.430 (multa de mora).
 - [ ] Ligar ao CPC 23 quando entrar na Base Contábil.

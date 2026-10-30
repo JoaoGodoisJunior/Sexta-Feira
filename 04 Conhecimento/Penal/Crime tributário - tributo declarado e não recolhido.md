@@ -3,6 +3,8 @@ tipo: conhecimento
 area: Penal
 temas: [crime tributário, apropriação indébita tributária, ICMS declarado, parcelamento, devedor contumaz]
 fontes: [lei-8137-1990-12-27, lei-9430-1996-12-27, lei-10684-2003-05-30, lei-11941-2009-05-27, lcp-225-2026-01-08, lei-9099-1995-09-26]
+status: válida
+revisar_em: 2027-01-30
 vigencia_conferida_em: 2026-10-30 (textos compilados da base, de 13/10/2026; não conferido no Planalto)
 certeza: misto — ver marcação em cada ponto
 origem: pergunta do João em 30/10/2026 (caso de cliente com ICMS declarado e não pago)
@@ -27,6 +29,7 @@ Deixar de pagar tributo declarado não é crime por si só; passa a ser quando o
   - Reiterada: irregular em 4 períodos de apuração seguidos ou 6 alternados em 12 meses.
   - Substancial: na esfera federal, R$ 15 milhões e mais de 100% do patrimônio conhecido; nos estados, conforme lei própria (§ 2º, I, "b"); sem lei estadual, aplica-se o critério federal após o prazo do art. 57 (§ 4º).
   - Injustificada: pode ser afastada por calamidade, prejuízo no exercício atual e no anterior, ou ausência de fraude à execução (§ 5º).
+- [[sumula-vinculante-24]] — crimes materiais do art. 1º da Lei 8.137 só se tipificam após o lançamento definitivo; o STJ estendeu a lógica à apropriação indébita previdenciária ([[tema-1166]]). **Precedente vinculante (conferido na base).**
 - [[lei-9099-1995-09-26]] — pena máxima de 2 anos: crime de menor potencial ofensivo, sujeito a transação penal. **Entendimento predominante** (dispositivo ainda não conferido na base).
 
 ## Como funciona na prática

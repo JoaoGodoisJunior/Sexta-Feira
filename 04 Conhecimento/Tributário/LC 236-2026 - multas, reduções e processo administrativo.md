@@ -3,6 +3,8 @@ tipo: conhecimento
 area: Tributário
 temas: [LC 236/2026, multa tributária, dosimetria, redução de multa, devedor contumaz, decadência, processo administrativo fiscal]
 fontes: [lcp-236-2026-09-04, lei-5172-1966-10-25]
+status: válida
+revisar_em: 2027-01-30
 vigencia_conferida_em: 2026-10-30 (texto original da LC 236 na base; CTN compilado de 13/10/2026; não conferido no Planalto)
 certeza: texto expresso, salvo onde indicado
 origem: pergunta do João em 30/10/2026 ("os percentuais já estão adequados à LC 236?")
