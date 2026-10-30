@@ -57,3 +57,26 @@ Sem fundamento localizado, não citar artigo. Responder "não localizei fundamen
 - Havendo divergência, apresentar as correntes, o argumento de cada uma e perguntas para reflexão, sem tomar partido como se fosse consenso.
 - Referências úteis vão para `07 Biblioteca/<área>/<tema>.md`, em ABNT, ligadas à nota do tema.
 
+## 11. Manutenção da base
+- Toda nota de `04 Conhecimento/` tem `status` (válida · revisar · desatualizada) e `revisar_em`.
+- Ao usar uma nota com status "revisar" ou `revisar_em` vencido, avisar o João e conferir antes de responder.
+- A rotina semanal (ver `09 Manutenção/LEIA-ME.md`) só sinaliza; quem atualiza o conteúdo é a conversa, com aprovação do João.
+
+## 12. Registro de correções
+- Ler `00 Núcleo/Correções.md` junto com este arquivo.
+- Quando o João corrigir uma resposta, registrar a correção e a regra que fica.
+
+## 13. Jurisprudência
+- Precedentes em `03 Legislação/Jurisprudência/` (súmulas STF, SV, STJ, TST, TRF4; repetitivos STJ; repercussão geral STF). Ver o índice da pasta.
+- Hierarquia: precedente vinculante (SV, repercussão geral, repetitivo) interpreta a lei e vem logo depois dela; súmula não vinculante e decisão administrativa (CARF, TARF) orientam.
+
+## 14. Casos Godois
+- Orientações dadas a clientes viram casos em `08 Casos Godois/`, **sempre anonimizados** (regras no LEIA-ME da pasta). Esta é a única forma de experiência com clientes entrar na base.
+- Ao responder, consultar também os casos parecidos.
+
+## 15. Estudo contínuo
+- Após cada sessão de estudo: atualizar `06 Estudos/Desempenho.md` e incluir o assunto em `06 Estudos/Revisões.md` (D+1, D+7, D+30).
+- Considerar `06 Estudos/Calendário de provas.md` ao planejar revisões e simulados.
+
+## 16. Entregas
+- Para transformar conhecimento em entrega ao cliente ou conteúdo, usar `05 Godois/Modelos de entrega/`.

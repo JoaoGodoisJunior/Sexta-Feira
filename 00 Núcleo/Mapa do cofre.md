@@ -7,13 +7,15 @@ A Sexta-Feira vive no GitHub (repositório privado `JoaoGodoisJunior/sexta-feira
 | OneDrive | `Godois Consultoria/` | Documentos de clientes | ✖ fora da Sexta-Feira |
 | OneDrive | `Estudos/` | Faculdade (FSG) e cursos, originais | João |
 | OneDrive | `Base Contábil/` | Livros, normas (CPC/NBC), especializações, modelos | João |
-| GitHub | `00 Núcleo/` | Regras, mapa, modelos de nota | Claude (João aprova) |
+| GitHub | `00 Núcleo/` | Regras, mapa, modelos de nota, registro de correções | Claude (João aprova) |
 | GitHub | `01 Entrada/` | Caixa de entrada: qualquer coisa a classificar | João |
-| GitHub | `03 Legislação/` | Leis e Notas Técnicas em Markdown | Claude |
+| GitHub | `03 Legislação/` | Leis, Notas Técnicas e jurisprudência (súmulas, repetitivos, repercussão geral) | Claude |
 | GitHub | `04 Conhecimento/` | Notas por tema, interligadas | Claude |
 | GitHub | `05 Godois/` | Modelos, procedimentos e ferramentas, sem dados de cliente | João e Claude |
 | GitHub | `07 Biblioteca/` | Doutrina por tema: livros, artigos e textos em ABNT | Claude |
-| GitHub | `06 Estudos/` | Desempenho nas sessões de estudo, simulados e pontos a reforçar | Claude |
+| GitHub | `08 Casos Godois/` | Casos de clientes anonimizados: a jurisprudência interna | Claude (João aprova) |
+| GitHub | `09 Manutenção/` | Relatórios semanais de atualização da base | Rotina automática |
+| GitHub | `06 Estudos/` | Desempenho, revisões espaçadas e calendário de provas | Claude |
 
 ## Fluxo
 1. João salva o original no OneDrive (`Estudos/` ou `Base Contábil/`) ou anexa na conversa.

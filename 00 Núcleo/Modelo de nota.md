@@ -2,6 +2,8 @@
 tipo: conhecimento
 area: Tributário | Penal | Empresarial | Civil | Trabalho | Contabilidade | Controladoria e Finanças | Administração e Gestão
 fontes: []
+status: válida | revisar | desatualizada
+revisar_em: AAAA-MM-DD
 vigencia_conferida_em: AAAA-MM-DD
 certeza: texto expresso | entendimento predominante | controvertido
 ---
