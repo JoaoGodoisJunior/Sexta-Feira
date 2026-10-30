@@ -44,6 +44,51 @@ def achado(lista, nivel, camada, local, problema, como_corrigir, regra=None):
                   "regra": regra})
 
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from regras_produto import anexo_i, lei_10925_xix  # noqa: E402
+
+
+def verificar_produto(achados, n, ncm, produto, det, ibscbs):
+    """Camada 4: tratamento tributário esperado pelo NCM (cesta básica e alíquota zero)."""
+    local = f"item {n} · NCM {ncm}"
+    ctrib = t(ibscbs, "n:cClassTrib") if ibscbs is not None else None
+    cst = t(ibscbs, "n:CST") if ibscbs is not None else None
+
+    a = anexo_i(ncm)
+    if a:
+        it, desc, tipo = a
+        if ctrib != "200003":
+            if tipo == "certo":
+                achado(achados, "erro", "Cadastro tributário", local,
+                       f"{produto}: NCM no Anexo I da LC 214 (item {it}, {desc}), mas a nota usa CST {cst} / cClassTrib {ctrib}.",
+                       "Cesta básica nacional: IBS e CBS com alíquota zero (CST 200, cClassTrib 200003, redução de 100%). "
+                       "Corrigir o cadastro do produto no emissor.",
+                       regra="LC 214/2025, art. 125 e Anexo I (texto expresso)")
+            else:
+                achado(achados, "alerta", "Cadastro tributário", local,
+                       f"{produto}: NCM pode estar no Anexo I da LC 214 (item {it}, {desc}), dependendo da descrição do produto.",
+                       "Confira se o produto é exatamente o descrito no Anexo I; se for, usar CST 200 / cClassTrib 200003.",
+                       regra="LC 214/2025, art. 125 e Anexo I")
+    elif ctrib == "200003":
+        achado(achados, "alerta", "Cadastro tributário", local,
+               f"{produto}: cClassTrib 200003 (cesta básica) para NCM que não encontrei no Anexo I da LC 214.",
+               "Confira o NCM e a classificação; redução indevida gera imposto a recolher.",
+               regra="LC 214/2025, art. 125 e Anexo I")
+
+    pis = det.find("n:imposto/n:PIS", NS)
+    pis_cst = None
+    if pis is not None and len(pis):
+        pis_cst = t(pis[0], "n:CST")
+    l = lei_10925_xix(ncm)
+    if l and pis_cst in ("01", "02"):
+        alinea, tipo = l
+        nivel = "erro" if tipo == "certo" else "alerta"
+        achado(achados, nivel, "Cadastro tributário", local,
+               f"{produto}: PIS/COFINS tributado (CST {pis_cst}), mas o NCM tem alíquota zero (Lei 10.925/2004, art. 1º, XIX, alínea {alinea}).",
+               "Usar CST 06 (alíquota zero) no PIS e na COFINS. Se foi recolhido, avaliar restituição/compensação via PER/DCOMP.",
+               regra="Lei 10.925/2004, art. 1º, XIX (texto expresso)")
+
+
 def validar(caminho_xml, pasta_schema):
     achados = []
     resumo = {}
@@ -97,6 +142,7 @@ def validar(caminho_xml, pasta_schema):
         ibscbs = det.find("n:imposto/n:IBSCBS", NS)
         item = {"nItem": n, "produto": t(prod, "n:xProd"), "ncm": t(prod, "n:NCM"),
                 "cfop": t(prod, "n:CFOP"), "vProd": str(d(prod, "n:vProd") or 0)}
+        verificar_produto(achados, n, item["ncm"], item["produto"], det, ibscbs)
         if ibscbs is None:
             sem_grupo.append(n)
             itens.append(item)

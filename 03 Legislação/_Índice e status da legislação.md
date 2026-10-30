@@ -10,7 +10,6 @@ fonte: repositório ctresb/leis (GitHub), textos baixados pelo projeto em 13 a 1
 > ✱ = arquivo na versão original, sem as alterações posteriores. Todas as demais estão compiladas (texto vigente) em 13/10/2026.
 
 ## ⚠ Pendentes (vieram incompletas do repositório)
-- **LC 214/2025** (IBS, CBS e IS): só a republicação das partes vetadas.
 - **LC 182/2021** (Marco Legal das Startups): só a republicação.
 - **RICMS-RS** (Decreto 37.699/1997): não está no repositório.
 
@@ -34,7 +33,7 @@ Pasta `NF-e e Reforma (Notas Técnicas)`, com os PDFs originais em `PDFs origina
 - [[lcp-227-2026-01-13]] — LC 227/2026, Comitê Gestor e processo administrativo do IBS ✱
 - [[lcp-225-2026-01-08]] — LC 225/2026, Código de Defesa do Contribuinte ✱
 - [[lcp-236-2026-09-04]] — LC 236/2026, altera o CTN (controvérsias, consensualidade) ✱
-- LC 214/2025 — IBS, CBS e IS — **pendente**
+- [[lcp-214-2025-01-16]] — LC 214/2025, IBS, CBS e IS (norma atualizada da Câmara, 28/08/2026; arts. 1º a 544 e anexos; PDF em `PDFs originais/`)
 
 ## Tributário vigente
 - [[lei-5172-1966-10-25]] — CTN
