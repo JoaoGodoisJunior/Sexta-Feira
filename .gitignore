@@ -1,0 +1,11 @@
+# Nunca versionar documentos de clientes
+*.xml
+!05 Godois/validador-nfe-rtc/schemas/**
+*.pfx
+*.p12
+01 Entrada/clientes/
+# Estado local do Obsidian
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
+__pycache__/
