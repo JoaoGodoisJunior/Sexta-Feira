@@ -12,6 +12,7 @@ fonte: repositório ctresb/leis (GitHub), textos baixados pelo projeto em 13 a 1
 ## ⚠ Pendentes (vieram incompletas do repositório)
 - **LC 182/2021** (Marco Legal das Startups): só a republicação.
 - **RICMS-RS** (Decreto 37.699/1997): não está no repositório.
+- **Decreto RS 57.848/2024** (exclusão das autopeças da ST): não está no repositório; usado na nota [[ICMS-RS - autopeças fora da ST e antecipação nas compras interestaduais]].
 
 Para resolver: abrir no site oficial, salvar a página (Ctrl+S) em `01 Entrada/` e avisar o Claude.
 
