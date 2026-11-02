@@ -13,3 +13,4 @@ A tarefa agendada diária lê esta tabela e avisa quando houver revisão no dia.
 |---|---|---|---|---|---|---|
 | Crime tributário: declarado e não recolhido | Penal | 2026-10-30 | 2026-10-31 | 2026-11-06 | 2026-11-29 | pendente |
 | Omissão de declaração: denúncia espontânea × ofício | Tributário | 2026-10-30 | 2026-10-31 | 2026-11-06 | 2026-11-29 | pendente |
+| Processo administrativo tributário federal (estudo dirigido: prazos LC 227 × CTN 208-D, recursos, CARF, IBS/CBS, devedor contumaz) | Direito Tributário II | 2026-11-02 | 2026-11-03 | 2026-11-09 | 2026-12-02 | pendente |

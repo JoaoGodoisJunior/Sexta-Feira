@@ -49,7 +49,7 @@ Multa de ofício de 75% sobre R$ 10.000 = R$ 7.500. Pagando no prazo da impugna�
 - Devedor contumaz: definição na [[lcp-225-2026-01-08]], art. 11.
 
 ## Pendências desta nota
-- [ ] Nota própria sobre o processo administrativo fiscal (arts. 208-A a 208-J) e a solução consensual de controvérsias.
+- [ ] Nota própria sobre o processo administrativo fiscal (arts. 208-A a 208-J) e a solução consensual de controvérsias. Material levantado no estudo dirigido de PAF federal (02/11/2026): conflito de prazos Decreto 70.235 (após LC 227) × CTN 208-D, a resolver na transição do art. 211-B.
 - [ ] Verificar se o RS já adaptou a Lei 6.537/1973.
 
 ## Relacionadas
