@@ -61,3 +61,5 @@ Empresa do Regime Normal no RS declara ICMS na GIA/EFD de jan. a jun. e não pag
 - [[Apropriação indébita previdenciária]] (CP, art. 168-A) — a criar
 - [[Parcelamento de tributos]] — a criar
 - [[Código de Defesa do Contribuinte - LC 225]] — a criar
+- [[Atualizações do Código Penal 2025-2026]] — devedor contumaz nos arts. 168-A e 337-A (LC 225/2026)
+- [[Crimes contra a administração pública]] — sonegação previdenciária (337-A) e descaminho
