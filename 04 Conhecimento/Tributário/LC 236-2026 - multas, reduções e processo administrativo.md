@@ -31,7 +31,7 @@ A LC 236/2026 alterou o CTN para limitar as multas tributárias (75%, 100% e 150
 - **Art. 142, § 9º** — agravantes: dolo de fraude, sonegação, conluio e reincidência, sempre dentro dos tetos do art. 113-A.
 - **Art. 142, § 10** — atenuantes que podem aumentar as reduções (cumprir a obrigação acessória, readequação durante a fiscalização, bons antecedentes, ausência de prejuízo ao erário, erro escusável, tema pendente de precedente vinculante); para participantes de programa de conformidade, as reduções passam a 60%, 50%, 40% e 30%.
 - **Art. 150, § 5º** — com dolo, fraude ou simulação, a decadência conta pelo art. 173, I.
-- **Arts. 208-A a 208-J** — normas gerais do processo administrativo fiscal (a detalhar em nota própria).
+- **Arts. 208-A a 208-J** — normas gerais do processo administrativo fiscal (ver [[Processo administrativo fiscal federal - PAF]]).
 - **Arts. 211-A e 211-B** — Estados, DF e Municípios têm **2 anos** para adaptar a legislação às reduções e ao processo administrativo; sem lei própria sobre o processo, aplicam-se diretamente os arts. 208-A a 208-J.
 - **Art. 2º** — a revogação de dispositivo da Lei 9.430 foi **vetada**.
 - **Art. 3º** — vigência na data da publicação (04/09/2026).
@@ -46,13 +46,14 @@ Multa de ofício de 75% sobre R$ 10.000 = R$ 7.500. Pagando no prazo da impugna�
 
 ## Pontos de atenção
 - A LC 236 está na base em **versão original** (sem alterações posteriores).
-- Devedor contumaz: definição na [[lcp-225-2026-01-08]], art. 11.
+- Devedor contumaz: definição na [[lcp-225-2026-01-08]], art. 11 — ver [[Devedor contumaz - Código de Defesa do Contribuinte (LC 225)]].
 
 ## Pendências desta nota
-- [ ] Nota própria sobre o processo administrativo fiscal (arts. 208-A a 208-J) e a solução consensual de controvérsias. Material levantado no estudo dirigido de PAF federal (02/11/2026): conflito de prazos Decreto 70.235 (após LC 227) × CTN 208-D, a resolver na transição do art. 211-B.
+- [x] Nota própria sobre o processo administrativo fiscal: [[Processo administrativo fiscal federal - PAF]] (02/11/2026). Falta a solução consensual de controvérsias.
 - [ ] Verificar se o RS já adaptou a Lei 6.537/1973.
 
 ## Relacionadas
 - [[Omissão de declaração - denúncia espontânea x lançamento de ofício]]
 - [[Crime tributário - tributo declarado e não recolhido]]
-- [[Código de Defesa do Contribuinte - LC 225]] — a criar
+- [[Devedor contumaz - Código de Defesa do Contribuinte (LC 225)]]
+- [[Processo administrativo fiscal federal - PAF]]

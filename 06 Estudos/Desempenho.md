@@ -12,4 +12,5 @@ _(vazio — será preenchido após a primeira sessão)_
 
 | Data | Matéria | Assunto | Acertos | Erros | Pontos a reforçar |
 |---|---|---|---|---|---|
+| 2026-11-02 | Direito Tributário II | Estudo dirigido: processo administrativo tributário federal (17 questões) | — | — | Respondido com a Sexta-Feira, sem avaliação. Reforçar: prazos após a LC 227 × CTN 208-D; CBS × IBS (recursos e órgãos) |
 | 2026-11-03 | Direito Penal (FSG) | Crimes contra o patrimônio, a administração pública e a dignidade sexual — 2 rodadas de simulado OAB (48 questões, quiz rápido) + revisão express | não informado | não informado | Resultado não informado; conferir na próxima revisão. Atenção às penas novas (Leis 15.280/2025 e 15.397/2026) e à ação penal do estelionato |
